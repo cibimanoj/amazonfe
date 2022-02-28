@@ -9,7 +9,7 @@ const Cart = () => {
 const {id}=useParams();
 console.log(id)
 const getinddata = async()=>{
-  const res = await fetch(`http://localhost:8005/products/${id}`,{
+  const res = await fetch(`https://webscraping-amazonclone.herokuapp.com/products/${id}`,{
       method:"GET",
       headers:{
           "Content-Type": "application/json"

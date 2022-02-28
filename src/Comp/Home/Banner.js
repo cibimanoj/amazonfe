@@ -29,7 +29,7 @@ const Banner = () => {
       >
           {data.map((imag,i)=>{
               return(
-                  <div>
+                  <div key={i}>
                       <img src={imag} className="banner_img"alt={i}/>
                   </div>
               )

@@ -26,7 +26,7 @@ export const SignUp = () => {
   const userData=async (e)=>{
     e.preventDefault();
     const {name,email,number, password, apassword}= user;
-    const res =await fetch("http://localhost:8005/register",{
+    const res =await fetch("https://webscraping-amazonclone.herokuapp.com/register",{
       method: "POST",
       headers:{
         "Content-Type": "application/json",

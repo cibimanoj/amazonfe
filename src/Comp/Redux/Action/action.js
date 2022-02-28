@@ -1,6 +1,6 @@
 export const getProducts=()=>async(dispatch)=>{
     try{
-        const data =await fetch("http://localhost:8005/products",{
+        const data =await fetch("https://webscraping-amazonclone.herokuapp.com/products",{
             method: "GET",
             headers: {
                 "Content-type":"application/json"
